@@ -24,6 +24,10 @@
 		E2620C901DC09D4C00CC390D /* hinh-nen-bloodseeker-dota-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2620C8E1DC09D4C00CC390D /* hinh-nen-bloodseeker-dota-2.jpg */; };
 		E2620C911DC09D4C00CC390D /* Keep_Calm_Dota_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2620C8F1DC09D4C00CC390D /* Keep_Calm_Dota_2.jpg */; };
 		E2620C951DC0A8C200CC390D /* PopoverControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2620C941DC0A8C200CC390D /* PopoverControllerViewController.swift */; };
+		E2620C971DC0B06300CC390D /* PopUpShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2620C961DC0B06300CC390D /* PopUpShare.swift */; };
+		E2620C9B1DC0B11B00CC390D /* Google.png in Resources */ = {isa = PBXBuildFile; fileRef = E2620C981DC0B11B00CC390D /* Google.png */; };
+		E2620C9C1DC0B11B00CC390D /* twitter_letter-512.png in Resources */ = {isa = PBXBuildFile; fileRef = E2620C991DC0B11B00CC390D /* twitter_letter-512.png */; };
+		E2620C9D1DC0B11B00CC390D /* square-facebook-512.png in Resources */ = {isa = PBXBuildFile; fileRef = E2620C9A1DC0B11B00CC390D /* square-facebook-512.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		E2620C8E1DC09D4C00CC390D /* hinh-nen-bloodseeker-dota-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hinh-nen-bloodseeker-dota-2.jpg"; sourceTree = "<group>"; };
 		E2620C8F1DC09D4C00CC390D /* Keep_Calm_Dota_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Keep_Calm_Dota_2.jpg; sourceTree = "<group>"; };
 		E2620C941DC0A8C200CC390D /* PopoverControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverControllerViewController.swift; sourceTree = "<group>"; };
+		E2620C961DC0B06300CC390D /* PopUpShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpShare.swift; sourceTree = "<group>"; };
+		E2620C981DC0B11B00CC390D /* Google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google.png; sourceTree = "<group>"; };
+		E2620C991DC0B11B00CC390D /* twitter_letter-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_letter-512.png"; sourceTree = "<group>"; };
+		E2620C9A1DC0B11B00CC390D /* square-facebook-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-facebook-512.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 				E2620C731DC092F800CC390D /* Info.plist */,
 				E2620C791DC0954400CC390D /* img */,
 				E2620C941DC0A8C200CC390D /* PopoverControllerViewController.swift */,
+				E2620C961DC0B06300CC390D /* PopUpShare.swift */,
 			);
 			path = popover;
 			sourceTree = "<group>";
@@ -93,6 +102,9 @@
 		E2620C791DC0954400CC390D /* img */ = {
 			isa = PBXGroup;
 			children = (
+				E2620C981DC0B11B00CC390D /* Google.png */,
+				E2620C991DC0B11B00CC390D /* twitter_letter-512.png */,
+				E2620C9A1DC0B11B00CC390D /* square-facebook-512.png */,
 				E2620C8E1DC09D4C00CC390D /* hinh-nen-bloodseeker-dota-2.jpg */,
 				E2620C8F1DC09D4C00CC390D /* Keep_Calm_Dota_2.jpg */,
 				E2620C8C1DC09B3300CC390D /* share_.png */,
@@ -167,8 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2620C9C1DC0B11B00CC390D /* twitter_letter-512.png in Resources */,
 				E2620C721DC092F800CC390D /* LaunchScreen.storyboard in Resources */,
 				E2620C841DC0958000CC390D /* love.png in Resources */,
+				E2620C9B1DC0B11B00CC390D /* Google.png in Resources */,
 				E2620C871DC0996100CC390D /* dota2.jpg in Resources */,
 				E2620C901DC09D4C00CC390D /* hinh-nen-bloodseeker-dota-2.jpg in Resources */,
 				E2620C911DC09D4C00CC390D /* Keep_Calm_Dota_2.jpg in Resources */,
@@ -180,6 +194,7 @@
 				E2620C891DC09A0D00CC390D /* greyLike.png in Resources */,
 				E2620C6F1DC092F800CC390D /* Assets.xcassets in Resources */,
 				E2620C831DC0958000CC390D /* haha.png in Resources */,
+				E2620C9D1DC0B11B00CC390D /* square-facebook-512.png in Resources */,
 				E2620C6D1DC092F800CC390D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +208,7 @@
 			files = (
 				E2620C6A1DC092F800CC390D /* ViewController.swift in Sources */,
 				E2620C681DC092F800CC390D /* AppDelegate.swift in Sources */,
+				E2620C971DC0B06300CC390D /* PopUpShare.swift in Sources */,
 				E2620C951DC0A8C200CC390D /* PopoverControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

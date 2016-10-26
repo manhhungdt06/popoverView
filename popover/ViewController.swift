@@ -16,10 +16,14 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "showDetail") {
+        if(segue.identifier == "showEmotions") {
             let controller = segue.destination
             controller.popoverPresentationController!.delegate = self
             controller.preferredContentSize = CGSize(width: 230, height: 30)
+        } else if(segue.identifier == "showShare") {
+            let controller = segue.destination
+            controller.popoverPresentationController!.delegate = self
+            controller.preferredContentSize = CGSize(width: 55, height: 170)
         }
     }
     

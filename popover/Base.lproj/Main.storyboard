@@ -37,6 +37,11 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Fhl-r6-Gtf" kind="popoverPresentation" identifier="showShare" popoverAnchorView="FG2-MX-52b" id="iYR-8s-9BT">
+                                        <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOTA2 Quotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1J3-YE-FzZ">
                                 <frame key="frameInset" minX="63" minY="34" width="134" height="20"/>
@@ -74,7 +79,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="k6J-F2-mur" kind="popoverPresentation" identifier="showDetail" popoverAnchorView="Pjb-06-dJE" id="ik3-VE-nXK">
+                                    <segue destination="k6J-F2-mur" kind="popoverPresentation" identifier="showEmotions" popoverAnchorView="Pjb-06-dJE" id="ik3-VE-nXK">
                                         <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
                                     </segue>
                                 </connections>
@@ -157,8 +162,48 @@
             </objects>
             <point key="canvasLocation" x="565" y="-61"/>
         </scene>
+        <!--Pop Up Share-->
+        <scene sceneID="YR1-xl-2KD">
+            <objects>
+                <viewController id="Fhl-r6-Gtf" customClass="PopUpShare" customModule="popover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RxJ-RD-cOR"/>
+                        <viewControllerLayoutGuide type="bottom" id="3YV-z5-9EO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ZW-iW-TNa">
+                        <rect key="frame" x="0.0" y="0.0" width="55" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYJ-V0-wm9">
+                                <frame key="frameInset" minX="5" minY="8" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Google.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dO-O0-8ru">
+                                <frame key="frameInset" minX="5" minY="61" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="square-facebook-512.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6N-eF-iiJ">
+                                <frame key="frameInset" minX="5" minY="114" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="twitter_letter-512.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="55" height="170"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzF-4F-SX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447" y="264"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Google.png" width="512" height="512"/>
         <image name="Keep_Calm_Dota_2.jpg" width="1920" height="1080"/>
         <image name="angry.png" width="30" height="29"/>
         <image name="dota2.jpg" width="1080" height="1920"/>
@@ -169,5 +214,7 @@
         <image name="love.png" width="30" height="29"/>
         <image name="sad.png" width="30" height="29"/>
         <image name="share_.png" width="30" height="30"/>
+        <image name="square-facebook-512.png" width="512" height="512"/>
+        <image name="twitter_letter-512.png" width="512" height="512"/>
     </resources>
 </document>

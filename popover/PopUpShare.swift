@@ -12,7 +12,15 @@ class PopUpShare: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func btnClick(_ sender: AnyObject) {
+        if(sender.tag == 11) {
+            print("google plus")
+        } else if(sender.tag == 12) {
+            print("facebook")
+        } else if(sender.tag == 13) {
+            print("twitter")
+        }
     }
 }
